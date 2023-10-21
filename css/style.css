@@ -182,27 +182,27 @@ header {
   }
 }
 
-.display-product-headlines{
+.display-product-headlines {
   text-align: center;
   background-color: blue;
   color: white;
-  padding:50px;
+  padding: 50px;
 }
-.display-product-headlines p{
+.display-product-headlines p {
   font-weight: 500;
   font-size: 20px;
   color: greenyellow;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
-.display-product-headlines h1{
+.display-product-headlines h1 {
   font-size: 50px;
   font-weight: 700;
-  font-family: 'roboto';
+  font-family: "roboto";
   padding: 20px;
 }
-.display-product-headlines h4{
+.display-product-headlines h4 {
   font-size: 25px;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 500;
   color: rgb(165, 163, 163);
   padding: 10px;
@@ -232,15 +232,15 @@ header {
 .product-container .card .title {
   font-size: 24px;
   font-weight: 500;
-  font-family: 'roboto';
+  font-family: "roboto";
   margin-top: 16px;
 }
-.product-container .card p{
+.product-container .card p {
   font-size: 20px;
   color: #7f8c9b;
-  line-height: 25px; 
+  line-height: 25px;
 }
-.card-button{
+.card-button {
   border: none;
   padding: 12px 24px;
   border-radius: 50px;
@@ -251,43 +251,70 @@ header {
   display: block;
   cursor: pointer;
 }
-.card-button:hover{
+.card-button:hover {
   background-color: blue;
   color: white;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 50px;
   text-align: center;
 }
-.footer-box{
+.footer-box {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
 }
-.footer-boxes{
+.footer-boxes {
   display: flex;
   flex-direction: column;
 }
-.footer-boxes a{
+.footer-boxes a {
   text-decoration: none;
   font-size: 24px;
   color: white;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 500;
   padding: 5px;
 }
 
-.footer-boxes a:hover{
+.footer-boxes a:hover {
   color: blue;
 }
-.copyright{
+.copyright {
   font-size: 20px;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 500;
   padding-top: 40px;
 }
 
+
+/* animations */
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
