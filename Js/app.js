@@ -21,17 +21,19 @@ const loadProducts = async () => {
 
 const displayProducts = (data) => {
   const productContainer = document.getElementById("product-container");
-   
+
   data.forEach((item) => {
     const productDiv = document.createElement("div");
     productDiv.classList.add("card");
     productDiv.innerHTML = `
         <img src="${item.image}" alt="Avatar">
-        <div class="container">
-          <p>${item.category}</p>
-          <h4><b>${item.title}</b></h4>
-          <p>${item.description}</p>
-          <p>$ ${item.price}</p>
+        <div class="card-details">
+        <div class="title">
+        ${item.title}    
+        </div>
+        <p>${item.category}</p>
+        <p>$ ${item.price}</p>
+        <button class="card-button">Read more</button>
         </div>
         `;
     productContainer.appendChild(productDiv);
