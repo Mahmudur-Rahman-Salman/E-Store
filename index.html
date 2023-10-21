@@ -33,7 +33,7 @@
           <a href="#">Pricing</a>
           <a href="#">Book A Call</a>
         </div>
-        <div class="responsive-nav-bar">
+        <div class="responsive-nav-bar" onclick="openNav()">
           <img
             class="responsive-nav-logo"
             src="/images/menu.png"
@@ -42,16 +42,36 @@
         </div>
       </nav>
     </header>
+    <!-- responsive nav -->
+    <div class="responsive-nav" id="responsive-nav">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="responsive-nav-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Book A Call</a>
+      </div>
+    </div>
     <!-- main sectionj -->
     <main>
       <section class="hero">
         <div class="hero-image-box">
-          <img class="hero-img" src="/images/online-payment.png" alt="online-payment">
+          <img
+            class="hero-img"
+            src="/images/online-payment.png"
+            alt="online-payment"
+          />
         </div>
         <div class="hero-text-box">
           <p class="hero-text-para-one">Trusted by 8,000+ Brands</p>
-          <h1 class="hero-text-headline">A Fresh Perspective on Your <br> E-Commerce Store.</h1>
-          <p class="hero-text-para-two">E-Store provides robust, conversion-focused UX <br> reports and the design to go with it.</p>
+          <h1 class="hero-text-headline">
+            A Fresh Perspective on Your <br />
+            E-Commerce Store.
+          </h1>
+          <p class="hero-text-para-two">
+            E-Store provides robust, conversion-focused UX <br />
+            reports and the design to go with it.
+          </p>
           <button class="book-a-call">Book A Call</button>
         </div>
       </section>
